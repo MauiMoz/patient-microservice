@@ -40,7 +40,6 @@ FROM maven:4.0.0-rc-5-eclipse-temurin-21 AS tester
 WORKDIR /app
 
 COPY pom.xml .
-COPY .mvn .mvn
 
 # Copy source code into /app/src
 COPY src ./src
