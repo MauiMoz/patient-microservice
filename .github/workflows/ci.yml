@@ -11,7 +11,7 @@ jobs:
       contents: read
       packages: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Log in to registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
@@ -63,9 +63,10 @@ jobs:
 
       - name: Run tests
         run: |
+          IMAGE_TAG=$(echo "ghcr.io/${{ github.repository }}:${{ github.sha }}" | tr '[:upper:]' '[:lower:]')
           docker run --rm --network test-network \
             -e SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/patientdb \
-            ghcr.io/${{ github.repository }}:${{ github.sha }}-test \
+            $IMAGE_TAG-test \
             mvn -ntp test
 
       - name: Cleanup
