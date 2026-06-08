@@ -14,8 +14,10 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Build and push images
+        env:
+          IMAGE_TAG: ghcr.io/${{ github.repository }}:${{ github.sha }}
         run: |
-          IMAGE_TAG=ghcr.io/${{ github.repository }}:${{ github.sha }}
+          IMAGE_TAG=$(echo $IMAGE_TAG | tr '[:upper:]' '[:lower:]')
           docker build --target tester -t $IMAGE_TAG-test .
           docker build -t $IMAGE_TAG .
           docker push $IMAGE_TAG-test
