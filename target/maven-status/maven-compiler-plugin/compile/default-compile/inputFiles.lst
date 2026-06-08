@@ -1,0 +1,10 @@
+/home/ornithomimus/Desktop/Uni_SS26/CS/ASE/PDP_3/patientmicroservice/src/main/java/org/example/patientmicroservice/PatientmicroserviceApplication.java
+/home/ornithomimus/Desktop/Uni_SS26/CS/ASE/PDP_3/patientmicroservice/src/main/java/org/example/patientmicroservice/client/PatientServiceClient.java
+/home/ornithomimus/Desktop/Uni_SS26/CS/ASE/PDP_3/patientmicroservice/src/main/java/org/example/patientmicroservice/controller/GlobalExceptionHandler.java
+/home/ornithomimus/Desktop/Uni_SS26/CS/ASE/PDP_3/patientmicroservice/src/main/java/org/example/patientmicroservice/controller/PatientController.java
+/home/ornithomimus/Desktop/Uni_SS26/CS/ASE/PDP_3/patientmicroservice/src/main/java/org/example/patientmicroservice/exceptions/PatientAlreadyExistsException.java
+/home/ornithomimus/Desktop/Uni_SS26/CS/ASE/PDP_3/patientmicroservice/src/main/java/org/example/patientmicroservice/exceptions/PatientNotFoundException.java
+/home/ornithomimus/Desktop/Uni_SS26/CS/ASE/PDP_3/patientmicroservice/src/main/java/org/example/patientmicroservice/model/Patient.java
+/home/ornithomimus/Desktop/Uni_SS26/CS/ASE/PDP_3/patientmicroservice/src/main/java/org/example/patientmicroservice/repository/IPatientRepository.java
+/home/ornithomimus/Desktop/Uni_SS26/CS/ASE/PDP_3/patientmicroservice/src/main/java/org/example/patientmicroservice/service/IPatientService.java
+/home/ornithomimus/Desktop/Uni_SS26/CS/ASE/PDP_3/patientmicroservice/src/main/java/org/example/patientmicroservice/service/PatientService.java

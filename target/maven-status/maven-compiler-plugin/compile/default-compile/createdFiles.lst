@@ -1,0 +1,13 @@
+org/example/patientmicroservice/exceptions/PatientNotFoundException.class
+org/example/patientmicroservice/service/PatientService.class
+org/example/patientmicroservice/client/PatientServiceClient.class
+org/example/patientmicroservice/PatientmicroserviceApplication.class
+org/example/patientmicroservice/repository/IPatientRepository.class
+org/example/patientmicroservice/model/Patient$Gender.class
+org/example/patientmicroservice/service/IPatientService.class
+org/example/patientmicroservice/model/Patient$PatientBuilder.class
+org/example/patientmicroservice/model/Patient.class
+org/example/patientmicroservice/controller/PatientController.class
+org/example/patientmicroservice/controller/GlobalExceptionHandler.class
+org/example/patientmicroservice/exceptions/PatientAlreadyExistsException.class
+org/example/patientmicroservice/client/PatientServiceClient$1.class
